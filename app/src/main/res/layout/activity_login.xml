@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/camaro"
+    android:gravity="center_horizontal"
+    tools:context="group5.tcss450.uw.edu.outofgas.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="44dp"
+            android:background="@color/wallet_dim_foreground_inverse_disabled_holo_dark"
+            android:drawableStart="@drawable/user"
+            android:gravity="center_vertical"
+            android:hint="@string/username_hint"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/username"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="31dp"
+            android:background="@color/wallet_dim_foreground_inverse_disabled_holo_dark"
+            android:drawableStart="@drawable/lock"
+            android:gravity="center_vertical"
+            android:hint="@string/password_hint"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/password"
+            android:layout_below="@+id/password"
+            android:text="@string/rememberMe"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/forgetPasswordTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/checkBox"
+            android:layout_below="@+id/checkBox"
+            android:layout_marginTop="10dp"
+            android:onClick="forgotPasswordMethod"
+            android:text="@string/forgotPassword"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/verifyCodeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/forgetPasswordTextView"
+            android:layout_alignBottom="@+id/forgetPasswordTextView"
+            android:layout_alignEnd="@+id/password"
+            android:onClick="verifyAccount"
+            android:text="@string/verifyYourAccount"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/forgetPasswordTextView"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="26dp"
+            android:layout_toStartOf="@+id/registerButton"
+            android:background="@drawable/my_button"
+            android:padding="10dp"
+            android:text="@string/login"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/loginButton"
+            android:layout_alignBottom="@+id/loginButton"
+            android:layout_alignEnd="@+id/password"
+            android:layout_marginEnd="22dp"
+            android:background="@drawable/my_button"
+            android:onClick="registerMethod"
+            android:padding="10dp"
+            android:text="@string/register"
+            android:textColor="#ffffff" />
+
+        <ProgressBar
+            android:id="@+id/progressBarLogin"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/registerButton"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+</FrameLayout>

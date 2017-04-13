@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/camaro"
+    android:id="@+id/activity_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:gravity="center_horizontal"
+    tools:context="group5.tcss450.uw.edu.outofgas.DetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/custom_border">
+
+        <RelativeLayout
+            android:id="@+id/detailLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="29dp"
+                android:id="@+id/ratingTextView"
+                android:layout_below="@+id/priceTextView"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:textStyle="italic"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23dp"
+                android:id="@+id/priceTextView"
+                android:layout_below="@+id/vicinityTextView"
+                android:layout_alignStart="@+id/ratingTextView"
+                android:textColor="@color/white"
+                android:textStyle="italic"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:id="@+id/vicinityTextView"
+                android:layout_below="@+id/nameTextView"
+                android:layout_alignStart="@+id/priceTextView"
+                android:textColor="@color/white"
+                android:textStyle="italic"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/nameTextView"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/vicinityTextView"
+                android:textColor="@color/white"
+                android:textStyle="italic"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:text="@string/unknown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:id="@+id/textView9"
+                android:textColor="@color/white"
+                android:textStyle="italic"
+                android:textSize="20dp"
+                android:layout_below="@+id/textView15"
+                android:layout_alignStart="@+id/textView15" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/distanceTextView"
+                android:layout_alignBaseline="@+id/textView15"
+                android:layout_alignBottom="@+id/textView15"
+                android:layout_alignStart="@+id/ratingTextView"
+                android:textColor="@color/white"
+                android:textStyle="italic"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:text="@string/distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView15"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/white"
+                android:textStyle="italic"
+                android:textSize="20dp"
+                android:layout_below="@+id/textView8" />
+
+            <TextView
+                android:text="@string/rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView8"
+                android:textColor="@color/white"
+                android:textStyle="italic"
+                android:textSize="20dp"
+                android:layout_alignBaseline="@+id/ratingTextView"
+                android:layout_alignBottom="@+id/ratingTextView"
+                android:layout_alignStart="@+id/textView15" />
+
+            <TextView
+                android:text="@string/price_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView7"
+                android:textColor="@color/white"
+                android:textStyle="italic"
+                android:textSize="20dp"
+                android:layout_alignBaseline="@+id/priceTextView"
+                android:layout_alignBottom="@+id/priceTextView" />
+
+            <TextView
+                android:text="@string/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView5"
+                android:textColor="@color/white"
+                android:textStyle="italic"
+                android:textSize="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/textView7" />
+
+            <TextView
+                android:text="@string/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView6"
+                android:textColor="@color/white"
+                android:textStyle="italic"
+                android:textSize="20dp"
+                android:layout_alignBaseline="@+id/vicinityTextView"
+                android:layout_alignBottom="@+id/vicinityTextView"
+                android:layout_alignStart="@+id/textView7" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

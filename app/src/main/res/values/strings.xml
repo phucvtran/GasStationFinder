@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">OutOfGas?</string>
+    <string name="login">Log In</string>
+    <string name="register">Register an Account</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_details">DetailsActivity</string>
+    <string name="sendCommentButton">Send</string>
+    <string name="forgotPassword">Forgot password?</string>
+    <string name="verifyYourAccount">Verify your account</string>
+    <string name="distance">Distance:</string>
+    <string name="price_level">Price level:*</string>
+    <string name="name">Name:</string>
+    <string name="address">Address:</string>
+    <string name="rating">Rating:*</string>
+    <string name="unknown">*:0 is unknown</string>
+    <string name="recievePassword">Receive password</string>
+    <string name="registerAccount">Register</string>
+    <string name="nearbyGas">Nearby Gas Station</string>
+    <string name="verify">Verify</string>
+    <string name="normalMap">Normal View</string>
+    <string name="hybridMap">Hybrid View</string>
+    <string name="satleliteMap">Satellite View</string>
+    <string name="signout">Sign Out</string>
+    <string name="comment">Comment</string>
+    <string name="save">Save this place</string>
+    <string name="rememberMe">Keep me logged in</string>
+    <string name="delete">Delete Saved Stations</string>
+    <string name="show">Show Saved Stations</string>
+    <string name="SHARED_PREFS">edu.uw.tcss450.PREFS</string>
+    <string name="username">usernameString</string>
+    <string name="setting">Setting</string>
+    <string name="chooseView">Choose your view of map</string>
+    <string name="chooseRadius">Choose the radius</string>
+    <string name="currentRadius">Current Radius in Kilometers:</string>
+    <string name="message">*The maximum gas station appear is 20 for any radius</string>
+
+</resources>

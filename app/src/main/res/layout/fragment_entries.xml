@@ -1,0 +1,20 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/entriesFragment"
+    android:background="@drawable/camaro"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="group5.tcss450.uw.edu.outofgas.EntriesFragment">
+
+    <TextView
+        android:id="@+id/entries"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/white"
+        android:background="@drawable/custom_border"
+        android:scrollbars="vertical"
+        android:gravity="top"
+        android:textSize="18dp"
+        android:padding="10dp"/>
+
+</FrameLayout>

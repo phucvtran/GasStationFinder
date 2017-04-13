@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_comment"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/camaro"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="group5.tcss450.uw.edu.outofgas.CommentActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:id="@+id/commentTV"
+                android:textColor="@color/black"
+                android:background="@drawable/custom_border_comment"
+                android:scrollbars="vertical"
+                android:gravity="bottom"
+                android:textSize="17dp"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:background="@drawable/custom_border_comment">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:lines="5"
+            android:hint="Comment..."
+            android:id="@+id/commentBox"
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxLength="150"
+            android:layout_gravity="bottom"/>
+
+        <TextView
+            android:text="@string/sendCommentButton"
+            android:layout_height="wrap_content"
+            android:id="@+id/commentSendText"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/true_blue"/>
+
+    </LinearLayout>
+
+</LinearLayout>
